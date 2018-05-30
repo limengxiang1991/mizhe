@@ -1,0 +1,107 @@
+body{background: #f3f1ed;}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;color:#999}
+a:hover{text-decoration: none;}
+.row1{
+    line-height: 28px;
+    width:1012px;
+    height:28px;
+    background: #f3f1ed;
+    margin: auto;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: #f3f1ed;
+  min-width: 100px;
+  padding: 8px 12px;
+  border: 1px solid #666;
+  z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdownright {
+  position: relative;
+  display: inline-block;
+  
+}
+.dropdownright-content {
+  display: none;
+  position: absolute;
+  background: #FFF;
+  min-width: 150px;
+  padding: 8px 10px;
+  border: 1px solid #666;
+}
+.dropdownright:hover .dropdownright-content {
+  display: block;
+}
+.row2{
+	height:93px;
+	background: #fff;
+}
+.row2 .logo{
+    line-height: 93px;    
+    height:93px;
+    background: #fff;
+    width:1012px;
+    margin: auto;       
+}
+.row3{
+	height:40px;
+	background: #ff6600;
+	padding-bottom: 20px;
+}
+.row3 .index{
+    line-height: 40px;    
+    height:40px;
+    background: #ff6600;
+    width:1012px;
+    margin: auto;       
+}
+.row3 .index ul li{
+	float: left;
+	padding:0 15px;
+}
+.row3 .index a{
+	color: #fff;
+}
+.row3 .index ul li:first-child{
+	background: #dd4400;
+}
+.row3 .index ol li{
+	width: 88px;
+	padding:0 15px;
+}
+.row3 .index li:hover{background: #dd4400;}
+.main .lunbo{
+	width: 1012px;
+	background: #fafafa;
+	margin: auto;
+}
+.main .lunbo .a{
+	width: 862px;
+}
+.main .lunbo .a #myCarousel{
+	width: 582px;
+	float: left;	
+}
+.main .lunbo .a .brand{
+	float: right;
+	width: 280px;
+}
+.main .lunbo .a .brand ul{
+	overflow: hidden;
+	width:260px;
+	height: 320px;
+}
+
+
+
