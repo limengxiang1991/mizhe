@@ -1,0 +1,146 @@
+body{background: #f3f1ed;}
+*{margin: 0;padding: 0;}
+li{list-style: none;}
+a{text-decoration: none;color:#333}
+a:hover{text-decoration: none;}
+html,body{width: 100%;height: 100%;}
+.backtop{
+	width: 61px;
+	height: 61px;
+	background: url(../img/icons1.png) -20px -437px no-repeat;
+	bottom:50px;
+	right:30px;
+	position: fixed;
+	text-align: center;
+	padding-top:25px;
+	display: none;	
+}
+.backtop:hover{
+	width: 63px;
+	height: 61px;
+	background: url(../img/icons1.png) -99px -437px no-repeat;
+	bottom:50px;
+	right:30px;
+	position: fixed;
+	text-align: center;
+	padding-top:25px;
+}
+.up{
+	position:fixed;
+    bottom:50px;
+    right:30px;
+    width:61px;
+    height:61px;
+	display: none;
+	padding-top:25px;
+}
+.backtop:hover .up{
+	display: block;
+	color:#fff;
+}
+
+.container-fluid{
+	width: 100%;
+    padding: 0;	
+}
+.container{
+	padding-left:10px;
+	margin-right:auto;
+	margin-left:auto;
+}
+.row1{
+    line-height: 28px;
+    width:1012px;
+    height:28px;
+    background: #f3f1ed;
+    margin: auto;
+}
+.row1 .xiala{
+	float: left;
+}
+.row1 .xiala ul{
+	z-index: 100;
+	position: absolute;
+	text-align: center;
+	border: solid 1px transparent;
+	width:102px;
+	height: 2px;
+	margin-left:-8px;	
+}
+.row1 .xiala ul:hover{
+	height:84px;
+	border: solid 1px #999;
+	background: #f3f1ed;	
+}
+.row1 .xiala ul li:hover{
+	background: #ADADAD;
+}
+.row1 .xiala .two{
+	display: none;
+}
+
+.row1 .xiala ul:hover .two{
+	display: block;
+}
+.row1 .login .a{
+	padding-left:100px;
+}
+.row1 a:hover{color: #333;}
+.row1 .free{
+	margin-left:-72px;
+}
+.row1 .top ul{
+	float: right;
+}
+.row1 .top ul li{
+	float: left;
+}
+.row1 .top ul .last{
+	display: none;
+}
+
+
+.row2{
+	height:93px;
+	background: #fff;
+	width: 100%;
+	margin-top:-9px;
+}
+.row2 .logo{
+    line-height: 93px;    
+    height:93px;
+    background: #fff;
+    width:1012px;
+    margin: auto; 
+    margin-left:110px;         
+}
+.row3{
+	height:40px;
+	background: #ff6600;	
+	width: 100%;
+	margin-bottom:20px;
+}
+.row3 .index{
+    line-height: 40px;    
+    height:40px;
+    background: #ff6600;
+    width:1012px;
+    margin: auto; 
+    padding-right:20px; 
+    margin-left:110px;     
+}
+.row3 .index ul li{
+	float: left;
+	padding:0 15px;
+}
+.row3 .index a{
+	color: #fff;
+}
+.row3 .index ul li:first-child{
+	background: #dd4400;
+}
+.row3 .index ol li{
+	width: 88px;
+	padding:0 15px;
+}
+.row3 .index li:hover{background: #dd4400;}

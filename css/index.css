@@ -1,8 +1,53 @@
 body{background: #f3f1ed;}
 *{margin: 0;padding: 0;}
 li{list-style: none;}
-a{text-decoration: none;color:#999}
+a{text-decoration: none;color:#333}
 a:hover{text-decoration: none;}
+html,body{width: 100%;height: 100%;}
+.backtop{
+	width: 61px;
+	height: 61px;
+	background: url(../img/icons1.png) -20px -437px no-repeat;
+	bottom:50px;
+	right:30px;
+	position: fixed;
+	text-align: center;
+	padding-top:25px;
+	display: none;	
+}
+.backtop:hover{
+	width: 63px;
+	height: 61px;
+	background: url(../img/icons1.png) -99px -437px no-repeat;
+	bottom:50px;
+	right:30px;
+	position: fixed;
+	text-align: center;
+	padding-top:25px;
+}
+.up{
+	position:fixed;
+    bottom:50px;
+    right:30px;
+    width:61px;
+    height:61px;
+	display: none;
+	padding-top:25px;
+}
+.backtop:hover .up{
+	display: block;
+	color:#fff;
+}
+
+.container-fluid{
+	width: 100%;
+    padding: 0;	
+}
+.container{
+	padding-left:10px;
+	margin-right:auto;
+	margin-left:auto;
+}
 .row1{
     line-height: 28px;
     width:1012px;
@@ -10,61 +55,79 @@ a:hover{text-decoration: none;}
     background: #f3f1ed;
     margin: auto;
 }
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
+.row1 .xiala{
+	float: left;
 }
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background: #f3f1ed;
-  min-width: 100px;
-  padding: 8px 12px;
-  border: 1px solid #666;
-  z-index: 1;
+.row1 .xiala ul{
+	z-index: 100;
+	position: absolute;
+	text-align: center;
+	border: solid 1px transparent;
+	width:102px;
+	height: 2px;
+	margin-left:-8px;	
 }
-.dropdown:hover .dropdown-content {
-  display: block;
+.row1 .xiala ul:hover{
+	height:84px;
+	border: solid 1px #999;
+	background: #f3f1ed;	
 }
-.dropdownright {
-  position: relative;
-  display: inline-block;
-  
+.row1 .xiala ul li:hover{
+	background: #ADADAD;
 }
-.dropdownright-content {
-  display: none;
-  position: absolute;
-  background: #FFF;
-  min-width: 150px;
-  padding: 8px 10px;
-  border: 1px solid #666;
+.row1 .xiala .two{
+	display: none;
 }
-.dropdownright:hover .dropdownright-content {
-  display: block;
+
+.row1 .xiala ul:hover .two{
+	display: block;
 }
+.row1 .login .a{
+	padding-left:100px;
+}
+.row1 a:hover{color: #333;}
+.row1 .free{
+	margin-left:-72px;
+}
+.row1 .top ul{
+	float: right;
+}
+.row1 .top ul li{
+	float: left;
+}
+.row1 .top ul .last{
+	display: none;
+}
+
+
 .row2{
 	height:93px;
 	background: #fff;
+	width: 100%;
+	margin-top:-9px;
 }
 .row2 .logo{
     line-height: 93px;    
     height:93px;
     background: #fff;
     width:1012px;
-    margin: auto;       
+    margin: auto; 
+    margin-left:110px;         
 }
 .row3{
 	height:40px;
-	background: #ff6600;
-	padding-bottom: 20px;
+	background: #ff6600;	
+	width: 100%;
+	margin-bottom:20px;
 }
 .row3 .index{
     line-height: 40px;    
     height:40px;
     background: #ff6600;
     width:1012px;
-    margin: auto;       
+    margin: auto; 
+    padding-right:20px; 
+    margin-left:110px;     
 }
 .row3 .index ul li{
 	float: left;
@@ -82,12 +145,14 @@ a:hover{text-decoration: none;}
 }
 .row3 .index li:hover{background: #dd4400;}
 .main .lunbo{
-	width: 1012px;
-	background: #fafafa;
-	margin: auto;
+	width: 1012px;	
+	margin: auto;	
 }
 .main .lunbo .a{
 	width: 862px;
+	height: 100%;
+	float: left;
+	
 }
 .main .lunbo .a #myCarousel{
 	width: 582px;
@@ -102,6 +167,417 @@ a:hover{text-decoration: none;}
 	width:260px;
 	height: 320px;
 }
+.main .lunbo .registered{	
+	background: #fafafa;	
+	height: 100%;
+	overflow: hidden;
+	text-align: center;		
+	font-size: 12px;
+}
+.main .lunbo .registered .btn{
+	width: 112px;
+	height: 36px;
+	background: #ff6600;
+	color: #fff;
+	margin-top: 25px;
+	margin-bottom: 18px;
+}
+.registered .login{
+	border-bottom: 2px solid #f3f1ed;
+	padding-bottom: 20px;
+	width: 150px;
+	display: block;
+}
+.registered ul li:nth-of-type(1){
+	padding-left: 10px;
+	padding-top: 25px;
+}
+.registered ul li:nth-of-type(2){
+	padding-left: 10px;
+	padding-top: 35px;
+}
+.registered ul li:nth-of-type(3){
+	padding-left: 10px;
+	padding-top: 35px;
+	padding-bottom: 19px;
+}
+.registered ul li .plane{
+	width: 120px;
+	height:26px;
+	background: url(../img/icons1.png) -249px -295px no-repeat;
+	font-size: 14px;
+}
+.registered ul li .money{
+	width: 120px;
+	height:26px;
+	background: url(../img/icons1.png) -249px -359px no-repeat;
+}
+.registered ul li .glass{
+	width: 120px;
+	height:26px;
+	background: url(../img/icons1.png) -249px -424px no-repeat;
+}
 
+.registered ul li span{
+	width: 135px;
+	display: block;
+} 
+.registered ul li .ying{
+	font-size: 10px;
+	color: #999;
+}
+.nav .nav1{
+	width: 1012px;
+	background: #fff;
+	margin: auto;
+}
+.nav1 ul{
+	margin-top: 20px;
+    margin-left: 30px;
+    white-space: nowrap;
+}
+.nav1 ul img{
+	width: 160px;
+	height:160px;
+	vertical-align: middle;
+	display: block;
+	padding-top:30px;
+	padding-bottom: 10px;
+}
+.nav1 ul li{
+	display: inline-block;
+    height: 190px;
+    width: 160px;
+    position: relative;
+    margin-right: 34px;
+}
 
+.nav1 ul li span.price{
+	color: red;
+	font-size: 16px;
+	padding-right: 10px;
+}
+.nav1 ul li span.zhekou{
+	color: #999;
+	
+}
+.nav1 ul li span.unit {
+    font-size: 12px;
+}
+.nav1 ul li span.tiny{
+	font-size: 12px;
+}
+.nav1 ul li .top-icon{
+	width:50px;
+	height:43px;
+	background: url(../img/icons1.png) -245px -8px no-repeat;
+	position: absolute;	
+	left:-16px;
+	top:15px;
+	font-size:12px;
+	color: #fff;
+	text-align: center;
+	line-height: 7px;
+	padding-top:11px;
+}
+.main-text{
+	margin: auto;
+	height:58px;	
+	width: 1012px;
+	padding-top:9px;
+}
+.main-text .today{
+	height:50px;
+}
+.main-text .today .a{
+	font-size: 27px;
+	color: #302f2d;
+	float: left;
+}
+.main-text .today .b{
+	background: url(../img/icons1.png) -248px -492px no-repeat;width: 27px;height: 20px;display: block;
+	float: left;
+	margin: 9px 0 0 10px;
+}
+.main-text .today .c{
+	margin-left: 10px;margin-top: 9px;display: block;width: 200px;float: left;
+}
+.main-text .today .timer{
+	width: 120px;
+	float:left;
+	margin-left:-85px;
+	margin-top:-10px;	
+}
+.main_1{
+	margin: auto;
+	width: 1012px;
+	background: #fff;
+	margin-top:-10px;
+}
+.menu{
+	width: 998px;
+	height:40px;
+	background: #fff;
+}
 
+.main_1 ul{
+	width: 1012px;
+	height: 40px;
+	display: inline-block;
+	border-bottom: 5px solid #eee;
+	padding-left:35px;
+}
+.main_1 ul li{
+	float: left;			
+	padding:0 12px;
+	padding-top:10px;	
+	height: 40px;
+	margin-right:17px;
+	display: block;	
+}
+.menu ul .one{
+	border-bottom: 5px solid #ff6600;
+}
+.menu ul .one a{
+	color: #ff6600;
+}
+.menu ul .two a{
+	color: #ee4444;
+}
+.menu ul .three a{
+	color: #ee4444;
+}
+
+.main_1 ol{
+	margin-top: 7px;
+    margin-left: 27px;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 968px;
+    border-bottom: 1px solid #eee;    
+}
+.main_1 ol img{
+	width: 230px;
+	height:230px;
+	vertical-align: middle;
+	display: block;
+	padding-top:30px;
+}
+.main_1 ol li{
+	display: inline-block;
+    position: relative;
+    margin-right: 12px;
+    float: left;
+    padding-bottom: 20px;
+}
+.main_1 ol li .price{
+	color: red;
+	font-size: 30px;
+	padding-top:20px;
+	float:left;
+}
+.main_1 ol li span.zhekou{
+	color: #999;	
+}
+.main_1 ol li span.unit {
+    font-size: 18px;
+}
+.main_1 ol li span.tiny{
+	font-size: 18px;
+	margin-left:-9px;
+}
+.main_1 ol li .zhekou{
+	width:80px;
+	height:43px;
+	background: url(../img/icons1.png) -237px -169px no-repeat;
+	position: absolute;	
+	left:69px;
+	top:246px;
+	font-size:12px;
+	text-align: center;
+	line-height: 7px;
+	padding-top:11px;
+	color: #999;
+}
+.main_1 ol li .shan{
+	text-decoration: line-through;
+	padding-top:37px;
+	color: #999;
+}
+.main_1 ol li .qiang{
+	float:right;
+	margin-top:-27px;
+	display: block;
+	font-size: 12px;
+	color: #999;
+}
+.main_1 ol li .shardow{
+	width:230px;
+	height:30px;
+	background: #333;
+	position: absolute;
+	opacity: 0.8;
+	top:200px;
+	line-height: 30px;
+	display: none;
+}
+.main_1 ol li:hover img{
+	opacity: 0.8;
+}
+.main_1 ol li:hover .shardow{
+	display: block;
+	z-index: 100;	
+	overflow: hidden;
+}
+.main_1 ol li:hover .shardow a{
+	color: #fff;
+}
+.main_1 ol li .yigou{
+	background: url(../img/icons1.png) -248px -98px no-repeat;
+	width:71px;
+	height:31px;
+	position: absolute;	
+	left:157px;
+	top:252px;
+	font-size:14px;
+	text-align: center;
+	padding-top:6px;	
+	display: none;
+}
+.main_1 ol li:hover .yigou a{
+	color: #fff;
+}
+.main_1 ol li:hover .yigou{
+	display: block;
+}
+.main_1 ol li:hover .qiang{
+	display: none;
+}
+.fenye{
+	width: 100%;
+	height:130px;
+}
+.fenye ul{
+	float: right;
+	margin-right:416px;
+	padding-top:38px;
+}
+.fenye ul li{
+	float: left;
+	margin-right:5px;		
+}
+.fenye .one{
+	height: 34px;
+	width:35px;
+	background: #ff6600;
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+}
+.fenye .two a{
+	height: 34px;
+	width:35px;
+	background: #fff;
+	border: 1px solid #999;
+	text-align: center;
+	line-height: 34px;
+	display: block;
+}
+.fenye .three a{
+	height: 34px;
+	width:70px;
+	background: #fff;
+	border: 1px solid #999;
+	text-align: center;
+	line-height: 34px;
+	display: block;
+}
+.fenye a:hover{
+	color:#ff6600;
+	border: 1px solid #ff6600;
+}
+.fenye .four{
+	margin-top:-34px;
+}
+
+.footer{
+	background: #fff;
+	height: 165px;
+}
+.footer1{
+	background: #fff;
+	margin: auto;
+	width:1012px;
+	text-align: center;
+	
+}
+.footer1 ul{
+	padding:12px 0 12px 87px;	
+}
+.footer1 ul li{
+	float: left;
+	border-right: 1px solid #999;
+	height: 12px;
+	line-height: 12px;
+	padding-right: 10px;
+	padding-left:10px;
+}
+.footer1 ul li:last-child{
+	border:none;
+}
+.footer1 img{
+	width: 126px;
+	height:40px;
+	padding-right:15px;
+}
+.footer1 p{
+	padding-top:20px;
+	display: block;
+	color: #999;
+}
+.footer1 .share span{
+	background: url(../img/is.png) 360px 0 no-repeat;
+	display: block;
+	margin-right:150px;
+}
+.footer1 ol{
+	float:right;
+	margin-top:-19px;
+	padding-right:384px;
+}
+.footer1 ol li{
+	float:left;
+}
+.footer1 ol li:hover{
+	opacity: 0.8;
+}
+.footer1 .one{
+	background: url(../img/is.png) -3px -2235px no-repeat;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.footer1 .two{
+	background: url(../img/is.png) -3px -80px no-repeat;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.footer1 .three{
+	background: url(../img/is.png) -3px -120px no-repeat;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.footer1 .four{
+	background: url(../img/is.png) -3px -240px no-repeat;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.footer1 .five{
+	background: url(../img/is.png) -3px -200px no-repeat;
+    padding-left: 24px;
+    padding-top: 20px;
+}
+.footer1 .six{
+	background: url(../img/is.png) -3px -560px no-repeat;
+    padding-left: 24px;
+    padding-top: 20px;
+}
